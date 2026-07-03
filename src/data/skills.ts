@@ -1,0 +1,90 @@
+export const skillsTree = [
+  {
+    category: "WEB DEVELOPMENT",
+    icon: "globe",
+    skills: [
+      { name: "HTML5", level: 95 },
+      { name: "CSS3 / Sass", level: 90 },
+      { name: "JavaScript (ES6+)", level: 95 },
+      { name: "TypeScript", level: 92 },
+      { name: "React / Next.js", level: 94 },
+      { name: "TailwindCSS", level: 95 },
+      { name: "Framer Motion / GSAP", level: 88 },
+      { name: "GraphQL / Apollo", level: 85 },
+      { name: "WebSockets / Socket.io", level: 82 },
+    ],
+  },
+  {
+    category: "BACKEND",
+    icon: "server",
+    skills: [
+      { name: "Node.js / Express", level: 92 },
+      { name: "FastAPI / Python", level: 90 },
+      { name: "Flask", level: 85 },
+      { name: "REST API Design", level: 93 },
+      { name: "Authentication / JWT / OAuth", level: 90 },
+      { name: "Microservices Architecture", level: 85 },
+      { name: "Message Queues (Redis/RabbitMQ)", level: 80 },
+      { name: "WebSockets / Real-time", level: 82 },
+    ],
+  },
+  {
+    category: "DATABASE",
+    icon: "database",
+    skills: [
+      { name: "MongoDB / Mongoose", level: 90 },
+      { name: "PostgreSQL / Prisma", level: 88 },
+      { name: "MySQL", level: 85 },
+      { name: "Redis", level: 88 },
+      { name: "Vector Databases (Pinecone/Weaviate)", level: 85 },
+      { name: "Database Design / Optimization", level: 87 },
+    ],
+  },
+  {
+    category: "AI / MACHINE LEARNING",
+    icon: "brain",
+    skills: [
+      { name: "LLM Integration (OpenAI/Anthropic)", level: 92 },
+      { name: "LangChain / LlamaIndex", level: 90 },
+      { name: "RAG / Vector Search", level: 91 },
+      { name: "Prompt Engineering", level: 93 },
+      { name: "Fine-tuning / LoRA", level: 78 },
+      { name: "Computer Vision (OpenCV/YOLO)", level: 82 },
+      { name: "MLOps / Model Deployment", level: 80 },
+      { name: "Sentence Transformers / Embeddings", level: 88 },
+    ],
+  },
+  {
+    category: "PROGRAMMING LANGUAGES",
+    icon: "code",
+    skills: [
+      { name: "TypeScript", level: 95 },
+      { name: "Python", level: 93 },
+      { name: "JavaScript", level: 95 },
+      { name: "Java", level: 82 },
+      { name: "C++", level: 80 },
+      { name: "C", level: 75 },
+      { name: "Go", level: 70 },
+      { name: "Rust", level: 65 },
+      { name: "Solidity", level: 72 },
+    ],
+  },
+  {
+    category: "TOOLS & INFRASTRUCTURE",
+    icon: "wrench",
+    skills: [
+      { name: "Git / GitHub", level: 95 },
+      { name: "Docker / Docker Compose", level: 88 },
+      { name: "Kubernetes Basics", level: 70 },
+      { name: "AWS / Cloud Services", level: 82 },
+      { name: "Vercel / Netlify", level: 93 },
+      { name: "CI/CD (GitHub Actions)", level: 88 },
+      { name: "Postman / API Testing", level: 90 },
+      { name: "Linux / Bash", level: 85 },
+      { name: "Monitoring / Logging", level: 75 },
+    ],
+  },
+];
+
+export type SkillCategory = typeof skillsTree[0];
+export type Skill = typeof skillsTree[0]["skills"][0];

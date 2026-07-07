@@ -2,14 +2,14 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { Bike, Dumbbell, Gamepad2, Trophy } from "lucide-react";
+import { Bike, Code2, Cpu, Trophy } from "lucide-react";
 import { extraCurricular } from "@/data/extra-curricular";
 import { Reveal, MonoLabel } from "@/components/ui/reveal";
 
 const ICONS: Record<string, React.ElementType> = {
   bike: Bike,
-  dumbbell: Dumbbell,
-  gamepad: Gamepad2,
+  code: Code2,
+  cpu: Cpu,
   trophy: Trophy,
 };
 

@@ -46,8 +46,7 @@ const SOCIALS = [
   { label: "LinkedIn", href: personalInfo.linkedin, Icon: LinkedinIcon },
   { label: "GitHub", href: personalInfo.github, Icon: GitBranch },
   { label: "Instagram", href: personalInfo.instagram, Icon: InstagramIcon },
-  { label: "X", href: personalInfo.twitter, Icon: XIcon },
-];
+].filter((s) => s.href);
 
 /** Sui-style pyramid text mosaic for the footer payoff. */
 const PAYOFF_LINES = [

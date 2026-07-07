@@ -14,13 +14,6 @@ function LinkedinIcon({ className }: { className?: string }) {
   );
 }
 
-function XIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
 function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -35,8 +28,7 @@ const SOCIALS = [
   { label: "LinkedIn", href: personalInfo.linkedin, Icon: LinkedinIcon },
   { label: "GitHub", href: personalInfo.github, Icon: GitBranch },
   { label: "Instagram", href: personalInfo.instagram, Icon: InstagramIcon },
-  { label: "X / Twitter", href: personalInfo.twitter, Icon: XIcon },
-];
+].filter((s) => s.href);
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -112,6 +104,14 @@ export function Contact() {
                 {personalInfo.email}
                 <ArrowUpRight className="h-6 w-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
+              {personalInfo.phone && (
+                <a
+                  href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
+                  className="mt-3 block font-mono text-sm text-white/50 transition-colors hover:text-primary"
+                >
+                  {personalInfo.phone}
+                </a>
+              )}
             </Reveal>
 
             <Reveal delay={0.14}>

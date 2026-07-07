@@ -1,38 +1,38 @@
 export const personalInfo = {
   name: "DHRUV SAXENA",
-  title: "AI ENGINEER / FULL STACK DEVELOPER",
-  tagline: "Building intelligent systems that scale",
-  bio: `AI Engineer and Full Stack Developer with a B.Tech in Computer Science from PIET Jaipur. Currently interning at HG Technologies, building production-grade AI/ML systems using LLMs, RAG architectures, and vector databases. Passionate about creating intelligent applications that solve real-world problems.`,
+  title: "AI DEVELOPER / FULL STACK ENGINEER",
+  tagline: "Building intelligent, scalable digital solutions",
+  bio: `Computer Science student passionate about Full Stack Development, AI/ML, Deep Learning, and problem-solving. I build intelligent, scalable, and user-focused digital solutions while exploring modern technologies and Agentic AI.`,
   heroLines: [
-    "AI Engineer & Full Stack Developer.",
-    "I design and ship production-grade intelligent systems —",
-    "LLMs, RAG pipelines, and vector search at scale.",
-    "Currently building the future at HG Technologies.",
-    "B.Tech CSE, PIET Jaipur. Open to opportunities.",
+    "AI Developer & Full Stack Engineer.",
+    "I build intelligent, scalable, and user-focused digital solutions —",
+    "from AI assistants and marketplaces to full-stack web apps.",
+    "Currently AI/ML Intern at HG Technologies.",
+    "Exploring Agentic AI, Generative AI, and real-world ML systems.",
   ],
-  extendedBio: `I'm Dhruv Saxena, an AI Engineer and Full Stack Developer from Jaipur, India. My journey in tech started with competitive programming and evolved into building end-to-end intelligent systems.
+  extendedBio: `I'm Dhruv Saxena, a Computer Science student and AI enthusiast focused on Full Stack Development, Machine Learning, Deep Learning, and Agentic AI. With a strong foundation in DSA and hands-on project experience, I love turning complex ideas into impactful real-world applications.
 
-At HG Technologies, I work on deploying LLMs in production, building RAG pipelines, and optimizing inference for enterprise clients. Before this, I've delivered 20+ production applications as a freelancer, won Smart India Hackathon 2023, and actively contribute to open-source projects.
+I've interned across frontend development, UI/UX design, and AI/ML — from building responsive web interfaces at Bussibees and Euonus IT, to working on Machine Learning and Deep Learning projects at HG Technologies. I'm passionate about transforming ideas into intelligent, production-ready solutions.
 
-My tech stack spans the full spectrum: React/Next.js for frontend, Node.js/Python/FastAPI for backend, PostgreSQL/MongoDB/Redis for data, and OpenAI/LangChain/Pinecone for AI. I believe in writing clean, maintainable code and building systems that scale.
+My stack spans React, TypeScript, JavaScript, Python, FastAPI, MongoDB, OpenAI APIs, LangChain, Three.js, and modern UI tools like Figma. I enjoy merging AI, creativity, and clean engineering to craft experiences that feel both powerful and intuitive.
 
-When not coding, you'll find me on long rides with my Royal Enfield, in the gym pushing limits, or competing in Valorant/StarCraft II. I bring the same discipline and problem-solving mindset to everything I do.`,
+When I'm not coding, I'm exploring new AI tools, refining interfaces, and pushing myself to learn the technologies shaping the next generation of software.`,
   education: {
     degree: "B.Tech Computer Science & Engineering",
     institution: "PIET Jaipur",
     period: "2022 - 2026",
     highlights: [
-      "CGPA: 8.9/10",
-      "Dean's List: 6/8 Semesters",
-      "ACM Student Chapter President",
-      "GDSC Lead (Google Developer Student Clubs)",
+      "Computer Science undergraduate",
+      "Strong foundation in DSA & problem-solving",
+      "Hands-on AI/ML & full-stack project experience",
     ],
   },
-  email: "dhruv.saxena@email.com",
-  github: "https://github.com/dhruvsaxena",
-  linkedin: "https://linkedin.com/in/dhruvsaxena",
-  twitter: "https://twitter.com/dhruvsaxena",
-  instagram: "https://instagram.com/dhruvsaxena",
+  email: "dhruvsaxena1213@gmail.com",
+  phone: "+91 93519 01017",
+  github: "https://github.com/dhruvsaxena007",
+  linkedin: "https://www.linkedin.com/in/dhruv-saxena-297230291",
+  twitter: "",
+  instagram: "https://www.instagram.com/dhruv_saxena_007",
   resumeUrl: "/resume.pdf",
   location: "Jaipur, India",
   availability: "Open to opportunities",

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Dhruv Saxena",
   },
   metadataBase: new URL("https://dhruvsaxena.dev"),
-  description: "AI Engineer and Full Stack Developer building intelligent systems. B.Tech CSE from PIET Jaipur. Intern at HG Technologies. Open to opportunities.",
+  description: "AI Developer and Full Stack Engineer building intelligent systems. Computer Science student at PIET Jaipur. AI/ML Intern at HG Technologies.",
   keywords: [
     "AI Engineer",
     "Full Stack Developer",

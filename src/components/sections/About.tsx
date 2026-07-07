@@ -5,12 +5,12 @@ import { Reveal, WordReveal, MonoLabel } from "@/components/ui/reveal";
 import { personalInfo } from "@/data/personal";
 
 const FACTS = [
-  { k: "ROLE", v: "AI Engineer Intern" },
+  { k: "ROLE", v: "AI / ML Intern" },
   { k: "COMPANY", v: "HG Technologies" },
   { k: "EDUCATION", v: "B.Tech CSE" },
   { k: "INSTITUTION", v: "PIET Jaipur" },
   { k: "LOCATION", v: "Jaipur, India" },
-  { k: "STATUS", v: "Open to opportunities" },
+  { k: "PHONE", v: personalInfo.phone },
 ];
 
 export function About() {

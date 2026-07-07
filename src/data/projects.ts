@@ -5,7 +5,13 @@ export const projects = [
     description:
       "An AI-powered platform that helps users discover, compare, and analyze industrial machines using semantic search, recommendation systems, conversational AI, and intelligent ranking algorithms.",
     techStack: ["FastAPI", "OpenAI", "MongoDB", "LangChain", "Python", "React"],
-    image: "/images/projects/ai-marketplace.jpg",
+    image: "/images/projects/ai-marketplace.png",
+    images: [
+      "/images/projects/ai-marketplace.png",
+      "/images/projects/ai-marketplace-2.png",
+      "/images/projects/ai-marketplace-3.png",
+      "/images/projects/ai-marketplace-4.png",
+    ],
     github: "",
     liveDemo: "https://infra-ai-assistant.vercel.app/",
     caseStudy: "",
@@ -18,7 +24,13 @@ export const projects = [
     description:
       "A responsive web application for managing vehicle rentals, bookings, availability tracking, and customer interactions with a clean management workflow.",
     techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: "/images/projects/car-rental.jpg",
+    image: "/images/projects/car-rental.png",
+    images: [
+      "/images/projects/car-rental.png",
+      "/images/projects/car-rental-2.png",
+      "/images/projects/car-rental-3.png",
+      "/images/projects/car-rental-4.png",
+    ],
     github: "",
     liveDemo: "https://aurelia-car-rental.site.je/",
     caseStudy: "",
@@ -31,7 +43,13 @@ export const projects = [
     description:
       "An IoT-based safety system using Arduino and MPU6050 sensors with real-time monitoring to detect harsh acceleration, braking, and unsafe driving patterns.",
     techStack: ["Arduino", "MPU6050", "IoT", "Face Recognition", "Embedded Systems"],
-    image: "/images/projects/driver-monitoring.jpg",
+    image: "/images/projects/driver-monitoring.webp",
+    images: [
+      "/images/projects/driver-monitoring.webp",
+      "/images/projects/driver-monitoring-2.jpg",
+      "/images/projects/driver-monitoring-3.jpg",
+      "/images/projects/driver-monitoring-4.jpg",
+    ],
     github: "",
     liveDemo: "",
     caseStudy: "",
@@ -44,7 +62,13 @@ export const projects = [
     description:
       "A UI/UX concept for a food delivery platform covering user flows, visual design, and interface exploration for ordering, tracking, and restaurant discovery.",
     techStack: ["Figma", "Canva", "UI/UX Design", "Wireframing"],
-    image: "/images/projects/food-delivery.jpg",
+    image: "/images/projects/food-delivery.png",
+    images: [
+      "/images/projects/food-delivery.png",
+      "/images/projects/food-delivery-2.png",
+      "/images/projects/food-delivery-3.png",
+      "/images/projects/food-delivery-4.webp",
+    ],
     github: "",
     liveDemo: "",
     caseStudy: "",
@@ -58,11 +82,34 @@ export const projects = [
       "A campus-focused mobile application concept built with frontend fundamentals for student workflows, navigation, and responsive mobile layouts.",
     techStack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     image: "/images/projects/studentease.jpg",
+    images: [
+      "/images/projects/studentease.jpg",
+      "/images/projects/studentease-2.jpg",
+      "/images/projects/studentease-3.webp",
+    ],
     github: "",
     liveDemo: "",
     caseStudy: "",
     featured: false,
     category: "Frontend Development",
+  },
+  {
+    id: 6,
+    name: "Interactive 3D Portfolio (Previous Version)",
+    description:
+      "My earlier interactive portfolio built with a strong focus on motion, immersive UI, and creative engineering. It includes an interactive 3D character, GSAP-powered smooth animations, animated tech stack, responsive layouts, and modern visual storytelling.",
+    techStack: ["React", "TypeScript", "Vite", "GSAP", "Three.js", "WebGL", "FastAPI"],
+    image: "/images/projects/previous-portfolio.png",
+    images: [
+      "/images/projects/previous-portfolio.png",
+      "/images/projects/previous-portfolio-2.png",
+      "/images/projects/previous-portfolio-3.png",
+    ],
+    github: "https://github.com/dhruvsaxena007",
+    liveDemo: "https://dhruv-portfolio-x1rc.vercel.app/",
+    caseStudy: "",
+    featured: true,
+    category: "Interactive Portfolio",
   },
 ];
 

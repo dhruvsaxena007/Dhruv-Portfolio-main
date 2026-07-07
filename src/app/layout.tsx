@@ -77,6 +77,11 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
     creator: "@dhruvsaxena",
   },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   verification: {
     google: "google-site-verification-code",
   },

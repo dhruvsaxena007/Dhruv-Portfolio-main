@@ -9,12 +9,13 @@ import { HackerText } from "@/components/ui/hacker-text";
 
 const NAV = [
   { label: "ABOUT", href: "#about" },
-  { label: "WORK", href: "#work" },
   { label: "EXPERIENCE", href: "#experience" },
+  { label: "WORK", href: "#work" },
+  { label: "ACHIEVEMENTS", href: "#achievements" },
   { label: "CONTACT", href: "#contact" },
 ];
 
-const SECTION_IDS = ["about", "work", "experience", "contact"];
+const SECTION_IDS = ["about", "experience", "work", "achievements", "contact"];
 
 export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -65,7 +66,7 @@ export function Navbar() {
             <HackerText duration={1.15}>DHRUV SAXENA</HackerText>
           </a>
 
-          <div className="hidden items-center gap-9 md:flex">
+          <div className="hidden items-center gap-6 lg:gap-8 xl:gap-9 md:flex">
             {NAV.map((item) => (
               <div key={item.label} className="relative">
                 <HackerText

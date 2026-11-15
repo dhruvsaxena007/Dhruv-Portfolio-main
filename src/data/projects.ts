@@ -16,6 +16,7 @@ export const projects = [
     liveDemo: "https://infra-ai-assistant.vercel.app/",
     caseStudy: "",
     featured: true,
+    comingSoon: false,
     category: "AI / Full Stack",
   },
   {
@@ -35,6 +36,7 @@ export const projects = [
     liveDemo: "https://aurelia-car-rental.site.je/",
     caseStudy: "",
     featured: true,
+    comingSoon: false,
     category: "Full Stack Web App",
   },
   {
@@ -54,6 +56,7 @@ export const projects = [
     liveDemo: "",
     caseStudy: "",
     featured: true,
+    comingSoon: false,
     category: "Robotics + AI",
   },
   {
@@ -73,6 +76,7 @@ export const projects = [
     liveDemo: "",
     caseStudy: "",
     featured: false,
+    comingSoon: false,
     category: "UI/UX",
   },
   {
@@ -91,6 +95,7 @@ export const projects = [
     liveDemo: "",
     caseStudy: "",
     featured: false,
+    comingSoon: false,
     category: "Frontend Development",
   },
   {
@@ -98,7 +103,7 @@ export const projects = [
     name: "Interactive 3D Portfolio (Previous Version)",
     description:
       "My earlier interactive portfolio built with a strong focus on motion, immersive UI, and creative engineering. It includes an interactive 3D character, GSAP-powered smooth animations, animated tech stack, responsive layouts, and modern visual storytelling.",
-    techStack: ["React", "TypeScript", "Vite", "GSAP", "Three.js", "WebGL", "FastAPI"],
+    techStack: ["React", "TypeScript", "Vite", "GSAP", "Three.js", "WebGL"],
     image: "/images/projects/previous-portfolio.png",
     images: [
       "/images/projects/previous-portfolio.png",
@@ -109,8 +114,48 @@ export const projects = [
     liveDemo: "https://dhruv-portfolio-x1rc.vercel.app/",
     caseStudy: "",
     featured: true,
+    comingSoon: false,
     category: "Interactive Portfolio",
+  },
+  {
+    id: 7,
+    name: "Phonk Webcam Confidence Booster",
+    description:
+      "Browser-based phonk webcam editor with real-time face tracking, gesture-triggered beat drops, and in-browser MP4 export. Select a track and filter, pose for a buffered window, then trigger an edit via controls, keyboard, or sip/glasses gestures.",
+    techStack: ["React", "TypeScript", "Vite", "MediaPipe", "Web Audio API", "ffmpeg.wasm"],
+    image: "/images/projects/phonk-webcam/dm_0_0.5.jpg",
+    images: [
+      "/images/projects/phonk-webcam/dm_0_0.5.jpg",
+      "/images/projects/phonk-webcam/dm_1_1.5.jpg",
+      "/images/projects/phonk-webcam/dm_2_2.5.jpg",
+      "/images/projects/phonk-webcam/dm_3_3.5.jpg",
+      "/images/projects/phonk-webcam/dm_4_4.5.jpg",
+      "/images/projects/phonk-webcam/dm_5_5.5.jpg",
+      "/images/projects/phonk-webcam/dm_6_6.5.jpg",
+      "/images/projects/phonk-webcam/dm_7_7.5.jpg",
+    ],
+    github: "https://github.com/dhruvsaxena007/phonk-webcam-confidence-booster-ai",
+    liveDemo: "https://phonk-webcam-confidence-booster-ai.vercel.app/",
+    caseStudy: "",
+    featured: true,
+    comingSoon: false,
+    category: "Creative AI / Webcam",
+  },
+  {
+    id: 8,
+    name: "Coming Soon",
+    description:
+      "A new build is in progress. Details, screenshots, and live links will appear here once the project is ready to share.",
+    techStack: ["In Progress"],
+    image: "",
+    images: [],
+    github: "",
+    liveDemo: "",
+    caseStudy: "",
+    featured: false,
+    comingSoon: true,
+    category: "Upcoming",
   },
 ];
 
-export type Project = typeof projects[0];
+export type Project = (typeof projects)[0];

@@ -146,11 +146,35 @@ const ProjectCarousel = React.memo(function ProjectCarousel({
   );
 });
 
+function ComingSoonVisual() {
+  return (
+    <div className="relative aspect-[16/10] overflow-hidden border-b border-border bg-[#07040F]">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.22),transparent_68%)]" />
+      <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(168,85,247,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(168,85,247,0.12)_1px,transparent_1px)] [background-size:28px_28px]" />
+      <motion.div
+        className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/40"
+        animate={{ scale: [1, 1.08, 1], opacity: [0.45, 0.8, 0.45] }}
+        transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+        <span className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.28em] text-primary">
+          Coming Soon
+        </span>
+        <p className="max-w-[220px] text-center font-mono text-[11px] uppercase tracking-[0.18em] text-white/45">
+          New project in progress
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   const imageList = React.useMemo(
     () => getProjectImages(project as ProjectWithImages),
     [project]
   );
+  const isComingSoon = Boolean(project.comingSoon);
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
@@ -160,27 +184,33 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       whileHover={{ y: -4 }}
       className="group relative flex flex-col border border-border bg-[#0A0718] shadow-[0_6px_18px_rgba(0,0,0,0.22)] transition-all duration-500 hover:border-primary/45 hover:shadow-[0_16px_40px_rgba(124,58,237,0.25)]"
     >
-      {/* border trace */}
       <span className="pointer-events-none absolute left-0 top-0 h-px w-0 bg-primary transition-all duration-500 group-hover:w-full" />
       <span className="pointer-events-none absolute bottom-0 right-0 h-px w-0 bg-primary transition-all duration-500 group-hover:w-full" />
 
-      {/* header row: category + external */}
       <div className="flex items-center justify-between border-b border-border px-6 py-4">
         <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
           {project.category}
         </span>
-        {project.featured && (
+        {project.featured && !isComingSoon && (
           <span className="font-mono text-[10px] uppercase tracking-widest text-primary">
             Featured
+          </span>
+        )}
+        {isComingSoon && (
+          <span className="font-mono text-[10px] uppercase tracking-widest text-primary">
+            Soon
           </span>
         )}
       </div>
 
       <div className="transition-transform duration-500 group-hover:scale-[1.03]">
-        <ProjectCarousel images={imageList} title={project.name} />
+        {isComingSoon || imageList.length === 0 ? (
+          <ComingSoonVisual />
+        ) : (
+          <ProjectCarousel images={imageList} title={project.name} />
+        )}
       </div>
 
-      {/* body */}
       <div className="flex flex-1 flex-col p-6 transition-transform duration-500 group-hover:-translate-y-1">
         <h3 className="font-display text-xl font-bold tracking-tight text-white transition-colors group-hover:text-primary md:text-2xl">
           {project.name}
@@ -198,9 +228,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           ))}
         </div>
 
-        {/* CTA row */}
         <div className="mt-6 flex items-center gap-3 border-t border-border pt-5 transition-all duration-500 group-hover:pt-4">
-          {project.github && (
+          {!isComingSoon && project.github && (
             <a
               href={project.github}
               target="_blank"
@@ -213,7 +242,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               Code
             </a>
           )}
-          {project.liveDemo && (
+          {!isComingSoon && project.liveDemo && (
             <a
               href={project.liveDemo}
               target="_blank"
@@ -226,6 +255,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               Live
             </a>
           )}
+          {isComingSoon && (
+            <span className="font-mono text-xs uppercase tracking-widest text-white/40">
+              Links arriving soon
+            </span>
+          )}
         </div>
       </div>
     </motion.article>
@@ -236,7 +270,7 @@ export function Projects() {
   return (
     <section
       id="work"
-      className="relative border-t border-border bg-[#030307] px-6 py-28 md:py-40"
+      className="relative overflow-x-clip border-t border-border bg-[#030307] px-5 py-24 sm:px-6 md:py-40"
       aria-labelledby="projects-title"
     >
       <div className="mx-auto max-w-7xl">
@@ -253,12 +287,12 @@ export function Projects() {
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-6 max-w-2xl text-lg text-white/50">
+          <p className="mt-6 max-w-2xl text-base text-white/50 sm:text-lg">
             Production applications, AI systems and experiments — built end to end.
           </p>
         </Reveal>
 
-        <div className="mt-16 grid gap-px overflow-hidden border border-border bg-border md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden border border-border bg-border sm:mt-16 md:grid-cols-2">
           {projects.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}
